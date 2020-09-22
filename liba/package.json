@@ -1,0 +1,40 @@
+{
+  "name": "@yetanothervan/liba",
+  "version": "1.0.3",
+  "description": "",
+  "main": "dist/liba.js",
+  "types": "dist/liba.d.ts",
+  "access": "public",
+  "scripts": {
+    "build": "npm run clean && webpack --config webpack.config.js",
+    "clean": "del-cli ./dist/*",
+    "pub": "npm version patch && npm run build && npm publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "dist/**/*"
+  ],
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "@types/node": "^13.13.4",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.7",
+    "babel-loader": "^8.1.0",
+    "del-cli": "^3.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "ts-loader": "^7.0.2",
+    "typescript": "^3.8.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
+}
